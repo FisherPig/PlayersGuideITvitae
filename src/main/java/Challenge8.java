@@ -6,7 +6,7 @@ public class Challenge8 {
         int triangleBase = input.nextInt();
         System.out.println("And what is the height of the triangle?");
         int triangleHeight = input.nextInt();
-        int triangleArea = triangleHeight * triangleBase / 2;
+        float triangleArea = (float) (triangleHeight * triangleBase) / 2;
         System.out.println("The area of the triangle is " + triangleArea);
     }
 }

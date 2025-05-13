@@ -20,7 +20,7 @@ public class Challenge13 {
         } else if (enemyX < 0) {
             System.out.print("west");
         }
-        if (enemyY != 0) if (enemyX != 0) {
+        if (enemyY != 0 || enemyX != 0) {
             System.out.print(" of us!");
         }
     }
