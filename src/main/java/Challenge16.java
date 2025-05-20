@@ -22,8 +22,6 @@ public class Challenge16 {
             System.out.println("What is your next guess?");
             guessedNumber = input.nextInt();
         }
-        if (guessedNumber == correctNumber) {
-            System.out.println("You guessed the number!");
-        }
+        System.out.println("You guessed the number!");
     }
 }
