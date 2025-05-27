@@ -21,7 +21,7 @@ public class Challenge24 {
     }
 
     private static void Soup(Type SoupTypeClass, MainIngredient SoupIngredientClass, Seasoning SoupSeasoningClass){
-        System.out.println("There, I have made you " + SoupSeasoningClass + " " + SoupIngredientClass + " " + SoupTypeClass);
+        System.out.println("There, I have made you a " + SoupSeasoningClass + " " + SoupIngredientClass + " " + SoupTypeClass + "!");
     }
 
     public static void main(String[] args) {
@@ -30,7 +30,7 @@ public class Challenge24 {
             String TypeString = input.nextLine();
             TypeString = TypeString.toUpperCase();
             Type SoupType = Type.valueOf(TypeString);
-            System.out.println("And what ingredient should I use, " + MainIngredient.MUSHROOMS + ", " + MainIngredient.CHICKEN + ", " + MainIngredient.CARROTS + ", or " + MainIngredient.POTATOES + "?");
+        System.out.println("And what ingredient should I use, " + MainIngredient.MUSHROOMS + ", " + MainIngredient.CHICKEN + ", " + MainIngredient.CARROTS + ", or " + MainIngredient.POTATOES + "?");
             String IngredientString = input.nextLine();
             IngredientString = IngredientString.toUpperCase();
             MainIngredient SoupIngredient = MainIngredient.valueOf(IngredientString);

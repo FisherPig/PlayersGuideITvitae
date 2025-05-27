@@ -4,8 +4,7 @@ public class Challenge20 {
     public static int askForNumber(String text) {
         Scanner input = new Scanner(System.in);
         System.out.println(text);
-        int askForNumber = input.nextInt();
-        return askForNumber;
+        return input.nextInt();
     }
 
     public static int askForNumberInRange(String text, int min, int max) {
