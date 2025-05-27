@@ -21,7 +21,7 @@ public class Challenge22ManticoreHunting {
     }
 
     public static String statusReport(int round, int cityHP, int manticoreHP, int correctNumber) {
-        while (manticoreHP > 0 && cityHP > 0) {
+        if (manticoreHP > 0 && cityHP > 0) {
         System.out.println("-----------------------------------------------------------");
         System.out.println("STATUS: Round: " + round + "  City: " + cityHP + "/15  Manticore: " + manticoreHP + "/10");
         System.out.println("The cannon is expected to deal " + damageDone(round) + " damage this round.");
@@ -30,11 +30,9 @@ public class Challenge22ManticoreHunting {
         if (guessNumber == correctNumber) {
             manticoreHP -= damageDone(round);
             }
-        if (manticoreHP > 0) {
             round++;
             cityHP--;
             return statusReport(round, cityHP, manticoreHP, correctNumber);
-            }
         } if (manticoreHP <= 0) {
             System.out.println("The Manticore has been destroyed! The city of Consolas has been saved!");
         } else if (cityHP == 0) {
